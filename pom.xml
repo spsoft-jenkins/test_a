@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>staf_RestAssured</groupId>
-	<artifactId>staf_RestAssured_1.0</artifactId>
+	<artifactId>staf_RestAssured</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -53,12 +53,7 @@
 			<artifactId>cucumber-junit</artifactId>
 			<version>1.2.5</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
-	    <!-- <dependency>
-	        <groupId>io.cucumber</groupId>
-	        <artifactId>cucumber-junit</artifactId>
-	        <version>3.0.2</version>
-	    </dependency> -->
+		
 		<dependency>
 			<groupId>com.vimalselvam</groupId>
 			<artifactId>cucumber-extentsreport</artifactId>
@@ -131,18 +126,7 @@
 
 		<!--******************************************* Venkatreddy ***************************************** -->
 
-		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>3.141.59</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
-		<dependency>
-			<groupId>io.appium</groupId>
-			<artifactId>java-client</artifactId>
-			<version>7.0.0</version>
-		</dependency>
+		
 		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
 		<dependency>
 			<groupId>commons-io</groupId>
@@ -156,36 +140,6 @@
 			<version>6.14.3</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j -->
-		<dependency>
-			<groupId>net.sourceforge.tess4j</groupId>
-			<artifactId>tess4j</artifactId>
-			<version>4.4.0</version>
-		</dependency>
-		<!--************************content added today *************** -->
-		<dependency>
-
-			<groupId>io.appium</groupId>
-			<artifactId>java-client</artifactId>
-			<version>6.1.0</version>
-			<exclusions>
-				<exclusion>
-					<groupId>cglib</groupId>
-					<artifactId>cglib</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-
-		<!-- This is required for page factory use with Appium -->
-		<dependency>
-			<groupId>cglib</groupId>
-			<artifactId>cglib</artifactId>
-			<version>3.2.5</version>
-		</dependency>
-
-		<!-- ********************************************************************************************** -->
-
-
 
 	</dependencies>
 
@@ -219,16 +173,7 @@
 					<source>1.7</source>
 					<target>1.7</target>
 					<fork>true</fork>
-					<executable>C:\Program Files\Java\jdk1.8.0_171\bin\javac</executable>
-				</configuration>
-			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M3</version>
-				<configuration>
-					<skip>false</skip>
+					<executable>C:\Program Files\Java\jdk1.8.0_181\bin\javac</executable>
 				</configuration>
 			</plugin>
 			<plugin>
