@@ -1,5 +1,5 @@
 #This feature file contains few test scenarios to verify Rest API services
-#Author: Venkatareddy
+#Author: Rama Krishna
 Feature: To verify getCountries with Rest Assured
 @API_Test
 Scenario: To verify Rest service - GET Method
